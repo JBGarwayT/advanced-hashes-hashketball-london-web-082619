@@ -289,7 +289,10 @@ def winning_team
    end
   end
   if home_points > away_points
-    return 
+    return home_team
+  elsif away_points > home_points
+    return away_team
+  end
 end
   
   
