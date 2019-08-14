@@ -304,8 +304,7 @@ def player_with_longest_name
           name.each do |first_name, name_attributes|
             #binding.pry
             if name[name.keys.first].to_s.value > longest_name.value
-              biggest_shoe = name[name.keys.first][:shoe]
-              biggest_shoe_rebounds = name[name.keys.first][:rebounds]
+              longest_name = name[name.keys.first].to_s
             end
           end
         end
