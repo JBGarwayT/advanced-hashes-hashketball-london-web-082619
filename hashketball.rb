@@ -201,6 +201,15 @@ def player_numbers (element)
 end
 
 def player_stats (game_hash)
+  team_numbers = []
+  game_hash.each do |home_vs_away, team|
+   team.each do |team_attribute, values|
+      if team_attribute == :players
+        values.each do |name|
+        end
+      end
+    end
+  end
 end
 
 def big_shoe_rebounds (game_hash)
