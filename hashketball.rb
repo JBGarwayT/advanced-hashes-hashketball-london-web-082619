@@ -189,7 +189,7 @@ def player_numbers (element)
        if team_attribute == :players
          values.each do |name|
            name.each do |first_name, name_attributes|
-             team_numbers << name_attributes[:points]
+             team_numbers << name_attributes[:number]
               #binding.pry
              end
           end
