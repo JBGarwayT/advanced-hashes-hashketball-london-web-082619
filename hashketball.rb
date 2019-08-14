@@ -206,7 +206,9 @@ def player_stats (element)
    team.each do |team_attribute, values|
       if team_attribute == :players
         values.each do |name|
-          binding.pry
+          name.each do |first_name, name_attributes|
+            binding.pry
+          end
         end
       end
     end
