@@ -303,7 +303,7 @@ def player_with_longest_name
         values.each do |name|
           name.each do |first_name, name_attributes|
             if name.keys.first.to_s.length > longest_name.length
-              longest_name = name[name.keys.first].to_s
+              longest_name = name.keys.first.to_s
             end
           end
         end
