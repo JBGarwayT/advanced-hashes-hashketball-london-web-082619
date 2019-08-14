@@ -238,7 +238,26 @@ def big_shoe_rebounds
   biggest_shoe_rebounds
 end
   
-  
+def most_points_scored
+  most_points = 0
+  most_points_scorer = 0
+  game_hash.each do |home_vs_away, team|
+   team.each do |team_attribute, values|
+      if team_attribute == :players
+        values.each do |name|
+          name.each do |first_name, name_attributes|
+            #binding.pry
+            if name[name.keys.first][:points] > most_points
+              biggest_shoe = name[name.keys.first][:points]
+              biggest_shoe_rebounds = name[name.keys.first]
+            end
+          end
+        end
+      end
+    end
+  end
+  most_points_scorer
+end
   
   
 
