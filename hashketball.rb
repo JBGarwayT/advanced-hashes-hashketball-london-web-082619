@@ -240,7 +240,7 @@ end
   
 def most_points_scored
   most_points = 0
-  most_points_scorer = 0
+  most_points_scorer = ""
   game_hash.each do |home_vs_away, team|
    team.each do |team_attribute, values|
       if team_attribute == :players
