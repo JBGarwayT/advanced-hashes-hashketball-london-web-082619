@@ -279,6 +279,7 @@ def winning_team
        if team_attribute == :players
         values.each do |name|
           name.each do |first_name, name_attributes|
+            away_points += name[name.keys.first][:points]
           end
         end
       end
