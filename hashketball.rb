@@ -194,6 +194,7 @@ def player_numbers (element)
       end
     end
   end
+  team_numbers
 end
 
 def player_stats (game_hash)
