@@ -209,6 +209,7 @@ def player_stats (element)
             if first_name.to_s == element
               name_attributes
             binding.pry
+           end
           end
         end
       end
