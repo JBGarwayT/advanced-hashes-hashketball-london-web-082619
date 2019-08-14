@@ -246,7 +246,7 @@ def most_points_scored
       if team_attribute == :players
         values.each do |name|
           name.each do |first_name, name_attributes|
-            #binding.pry
+            binding.pry
             if name[name.keys.first][:points] > most_points
               biggest_shoe = name[name.keys.first][:points]
               biggest_shoe_rebounds = name[name.keys.first]
