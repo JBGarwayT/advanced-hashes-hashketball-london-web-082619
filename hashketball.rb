@@ -206,6 +206,7 @@ def player_stats (game_hash)
    team.each do |team_attribute, values|
       if team_attribute == :players
         values.each do |name|
+          binding.pry
         end
       end
     end
