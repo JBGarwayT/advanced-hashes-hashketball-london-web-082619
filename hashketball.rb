@@ -190,7 +190,25 @@ end
 def big_shoe_rebounds (game_hash)
 end
   
-  
+  top_scorer = ""
+  most_points = 0
+  game_hash.each do |home_vs_away, team|
+     team.each do |team_attribute, values|
+       if team_attribute == :players
+          values.each do |name|
+            name.each do |stats, another_value|
+             # binding.pry
+              if another_value[:points] && another_value[:points] > most_points
+               most_points = another_value[:points]
+               top_scorer = stats.to_s
+               #binding.pry
+              end
+            end
+          end
+       end
+     end
+  end
+  top_scorer
   
   
 
