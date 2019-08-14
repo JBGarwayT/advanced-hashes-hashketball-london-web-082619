@@ -200,7 +200,7 @@ def player_numbers (element)
   team_numbers
 end
 
-def player_stats (game_hash)
+def player_stats (element)
   team_numbers = []
   game_hash.each do |home_vs_away, team|
    team.each do |team_attribute, values|
