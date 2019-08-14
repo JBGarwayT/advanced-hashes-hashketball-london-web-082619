@@ -228,6 +228,7 @@ def big_shoe_rebounds
             #binding.pry
             if !biggest_shoe == 0 && name[name.keys.first][:shoe] > biggest_shoe
               biggest_shoe = name[name.keys.first][:shoe]
+              biggest_shoe_rebounds = name[name.keys.first][:rebounds]
             end
           end
         end
