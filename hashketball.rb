@@ -189,8 +189,8 @@ def player_numbers (element)
          values.each do |name|
            name.each do |first_name, name_attributes|
              team_numbers << name_attributes[:points]
-         end
-       end
+             end
+          end
         end
       end
     end
