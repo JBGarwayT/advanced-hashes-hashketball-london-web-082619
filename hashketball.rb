@@ -225,7 +225,7 @@ def big_shoe_rebounds
         values.each do |name|
           name.each do |first_name, name_attributes|
             binding.pry
-            if !biggest_shoe == 0 && 
+            if !biggest_shoe == 0
             end
           end
         end
