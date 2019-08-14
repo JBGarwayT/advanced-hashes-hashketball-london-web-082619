@@ -184,13 +184,13 @@ def player_numbers (element)
   team_numbers = []
   game_hash.each do |home_vs_away, team|
     if team[:team_name] == element
-      binding.pry
+     
      team.each do |team_attribute, values|
        if team_attribute == :players
          values.each do |name|
            name.each do |first_name, name_attributes|
              team_numbers << name_attributes[:points]
-             
+              binding.pry
              end
           end
         end
