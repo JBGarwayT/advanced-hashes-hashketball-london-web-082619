@@ -186,11 +186,13 @@ def player_numbers (element)
      team.each do |team_attribute, values|
        if team_attribute == :players
          values.each do |name|
+           name.each do |more_attributes, more_values|
            binding.pry
          end
-       end
-     end
-   end
+        end
+      end
+    end
+  end
 end
 
 def player_stats (game_hash)
