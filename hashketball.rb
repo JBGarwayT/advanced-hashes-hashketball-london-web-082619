@@ -175,7 +175,7 @@ end
 
 def team_names
   #binding.pry
-  home_team = (game_hash[:home][:team_name]).to_i
+  home_team = game_hash[:home][:team_name]
   away_team =  game_hash[:away][:team_name]
   home_and_away = [home_team, away_team]
   return home_and_away
