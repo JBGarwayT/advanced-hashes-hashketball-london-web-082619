@@ -219,7 +219,7 @@ end
 
 def big_shoe_rebounds 
   biggest_shoe = 0
-  
+  biggest_shoe_rebounds = 0
   game_hash.each do |home_vs_away, team|
    team.each do |team_attribute, values|
       if team_attribute == :players
