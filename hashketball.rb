@@ -182,6 +182,7 @@ def team_names
 end
 
 def player_numbers (element)
+  team_numbers = []
   
 end
 
