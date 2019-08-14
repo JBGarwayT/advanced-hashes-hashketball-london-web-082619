@@ -296,7 +296,23 @@ def winning_team
 end
   
 def player_with_longest_name
-
+  longest_name = ""
+  game_hash.each do |home_vs_away, team|
+   team.each do |team_attribute, values|
+      if team_attribute == :players
+        values.each do |name|
+          name.each do |first_name, name_attributes|
+            #binding.pry
+            if name[name.keys.first].to_s.value > biggest_shoe
+              biggest_shoe = name[name.keys.first][:shoe]
+              biggest_shoe_rebounds = name[name.keys.first][:rebounds]
+            end
+          end
+        end
+      end
+    end
+  end
+  longest_name
 end
 
 
