@@ -146,7 +146,6 @@ def num_points_scored (element)
 end
 
 def shoe_size (element)
-  
   game_hash.each do |home_vs_away, team|
      team.each do |team_attribute, values|
        if team_attribute == :players
@@ -183,7 +182,15 @@ end
 
 def player_numbers (element)
   team_numbers = []
-  
+  game_hash.each do |home_vs_away, team|
+     team.each do |team_attribute, values|
+       if team_attribute == :players
+         values.each do |name|
+           binding.pry
+         end
+       end
+     end
+   end
 end
 
 def player_stats (game_hash)
