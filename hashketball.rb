@@ -207,7 +207,7 @@ def player_stats (element)
         values.each do |name|
           name.each do |first_name, name_attributes|
             if first_name.to_s == element
-              name_attributes
+              return name_attributes
             #binding.pry
            end
           end
