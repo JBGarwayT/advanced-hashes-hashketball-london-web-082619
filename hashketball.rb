@@ -274,6 +274,16 @@ def winning_team
         end
       end
     end
+    if home_vs_away.to_s == "away"
+      team.each do |team_attribute, values|
+       if team_attribute == :players
+        values.each do |name|
+          name.each do |first_name, name_attributes|
+          end
+        end
+      end
+    end
+   end
   end
 end
   
