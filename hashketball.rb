@@ -205,8 +205,8 @@ def player_stats (game_hash)
   game_hash.each do |home_vs_away, team|
    team.each do |team_attribute, values|
       if team_attribute == :players
+        binding.pry
         values.each do |name|
-          binding.pry
         end
       end
     end
