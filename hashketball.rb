@@ -217,7 +217,18 @@ def player_stats (element)
   end
 end
 
-def big_shoe_rebounds (game_hash)
+def big_shoe_rebounds 
+  biggest_shoe = 0
+  game_hash.each do |home_vs_away, team|
+   team.each do |team_attribute, values|
+      if team_attribute == :players
+        values.each do |name|
+          name.each do |first_name, name_attributes|
+          end
+        end
+      end
+    end
+  end
 end
   
   
