@@ -260,6 +260,8 @@ def most_points_scored
 end
 
 def winning_team
+  home_team = 
+  away_team = 
   home_points = 0
   away_points = 0 
   game_hash.each do |home_vs_away, team|
@@ -286,6 +288,8 @@ def winning_team
     end
    end
   end
+  if home_points > away_points
+    return 
 end
   
   
