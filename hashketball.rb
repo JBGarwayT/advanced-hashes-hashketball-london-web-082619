@@ -264,11 +264,11 @@ def winning_team
   away_points = 0 
   game_hash.each do |home_vs_away, team|
     if home_vs_away.to_s == "home"
-    binding.pry
       team.each do |team_attribute, values|
        if team_attribute == :players
         values.each do |name|
           name.each do |first_name, name_attributes|
+            home_points += name[name.keys.first][:points]
             end
           end
         end
