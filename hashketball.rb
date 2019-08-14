@@ -333,6 +333,7 @@ def long_name_steals_a_ton
   end
   player_most_steals
   if player_with_longest_name == player_most_steals
+    return true
   end
 end
 
