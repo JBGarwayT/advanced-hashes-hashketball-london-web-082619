@@ -249,7 +249,7 @@ def most_points_scored
             binding.pry
             if name[name.keys.first][:points] > most_points
               biggest_shoe = name[name.keys.first][:points]
-              biggest_shoe_rebounds = name[name.keys.first]
+              biggest_shoe_rebounds = name.keys.first.to_s
             end
           end
         end
